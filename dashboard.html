@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - CampusConnect</title>
+  <meta name="description" content="Dashboard for CampusConnect">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <i class="fa-solid fa-trophy"></i> CampusConnect
+      </div>
+      <nav>
+        <a href="#" class="nav-item active">
+          <i class="fa-solid fa-house"></i> Dashboard
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-calendar-days"></i> Events
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-users"></i> Clubs
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-certificate"></i> Certificates
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-user"></i> Profile
+        </a>
+      </nav>
+      <div style="margin-top: auto; padding: 1rem;">
+        <a href="index.html" class="nav-item" style="color: #ef4444;">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i> Log Out
+        </a>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard-content">
+      <header class="dashboard-header">
+        <div>
+          <h2 style="font-size: 1.5rem; font-weight: 700;">Welcome back, Alex! 👋</h2>
+          <p style="color: var(--text-muted);">Here's what's happening on campus today.</p>
+        </div>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+          <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--primary-light); display: flex; justify-content: center; align-items: center; color: white; font-weight: bold;">
+            A
+          </div>
+        </div>
+      </header>
+
+      <!-- Stats -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <div class="stat-info">
+            <h4>Upcoming Events</h4>
+            <p>3</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+          <div class="stat-info">
+            <h4>My Clubs</h4>
+            <p>2</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="stat-info">
+            <h4>Certificates</h4>
+            <p>5</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Activity / Events Placeholder -->
+      <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-sm);">
+        <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">Upcoming Events</h3>
+        <div style="border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <h4 style="font-weight: 600;">Annual Tech Hackathon 2026</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);"><i class="fa-regular fa-clock"></i> Oct 15, 2026 &bull; Main Auditorium</p>
+          </div>
+          <button class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.9rem;">View</button>
+        </div>
+        <div style="border: 1px solid var(--glass-border); border-radius: 8px; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <h4 style="font-weight: 600;">Photography Club Meetup</h4>
+            <p style="font-size: 0.9rem; color: var(--text-muted);"><i class="fa-regular fa-clock"></i> Oct 18, 2026 &bull; Room 302</p>
+          </div>
+          <button class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.9rem;">View</button>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

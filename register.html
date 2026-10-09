@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - CampusConnect</title>
+  <meta name="description" content="Sign up for CampusConnect">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-trophy"></i> CampusConnect
+      </a>
+      <nav class="nav-links">
+        <a href="login.html" class="btn-login">Log In</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-container">
+    <div class="auth-card">
+      <div class="auth-header">
+        <h2>Create an Account</h2>
+        <p>Join the community today</p>
+      </div>
+      <form action="dashboard.html" method="GET">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="role">Select Role</label>
+          <select id="role" class="form-control" required style="appearance: auto; background-color: white;">
+            <option value="Student">Student</option>
+            <option value="Club Coordinator">Club Coordinator</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn-primary">Sign Up</button>
+      </form>
+      <div class="auth-footer">
+        <p>Already have an account? <a href="login.html">Log in here</a></p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

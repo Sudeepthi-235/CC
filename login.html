@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In - CampusConnect</title>
+  <meta name="description" content="Log in to CampusConnect">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-trophy"></i> CampusConnect
+      </a>
+      <nav class="nav-links">
+        <a href="register.html" class="btn-primary">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-container">
+    <div class="auth-card">
+      <div class="auth-header">
+        <h2>Welcome Back</h2>
+        <p>Enter your details to access your account</p>
+      </div>
+      <form action="dashboard.html" method="GET">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn-primary">Log In</button>
+      </form>
+      <div class="auth-footer">
+        <p>Don't have an account? <a href="register.html">Sign up here</a></p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
